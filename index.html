@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center my-10">
+            Functional <span class="text-indigo-600 font-medium ">Baap Er Bank</span> !!!
+        </h1>
+    </header>
+    <main>
+
+
+        <section class="grid grid-cols-3 my-16 w-3/4 gap-10 mx-auto text-white">
+            <!-- Deposit Card -->
+            <div class="py-16 bg-indigo-600 rounded-lg">
+                <h1 class="text-4xl font-normal ml-6 ">Deposit</h1>
+                <h2 class="text-4xl ml-6 my-2">$<span id="previous-deposit">00</span>
+                </h2>
+            </div>
+
+            <!-- Withdraw Card -->
+            <div class="py-16 bg-blue-600 rounded-lg">
+                <h1 class="text-4xl font-normal ml-6 ">Withdraw</h1>
+                <h2 class="text-4xl ml-6 my-2">$<span id="previous-withdraw">00</span>
+                </h2>
+            </div>
+
+
+            <!-- Balance Card -->
+            <div class="py-16 bg-amber-600 rounded-lg">
+                <h1 class="text-4xl font-normal ml-6 ">Balance</h1>
+                <h2 class="text-4xl ml-6 my-2">$<span id="previous-balance">1240</span>
+                </h2>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 my-16 w-3/4 gap-10 mx-auto text-white">
+            <!-- Deposit input Card -->
+            <div class="py-16 bg-amber-500 rounded-lg">
+                <h1 class="text-4xl font-normal ml-6 ">Deposit</h1>
+                <input id="deposit-input" class="w-3/4 p-2 ml-6 my-2 rounded-lg text-black block" type="text" name=""
+                    id="">
+                </h2>
+                <button id="deposit-btn"
+                    class="py-2 px-4 bg-blue-600 text-2xl rounded-lg hover:bg-blue-700 ml-6">Deposit</button>
+            </div>
+
+            <!-- Withdraw input Card -->
+            <div class="py-16 bg-rose-500 rounded-lg">
+                <h1 class="text-4xl font-normal ml-6 ">Withdraw</h1>
+                <input id="withdraw-field" class="w-3/4 p-2 ml-6 my-2 rounded-lg text-black block" type="text" name="">
+                </h2>
+                <button id="withdraw-btn"
+                    class="py-2 px-4 bg-indigo-600 text-2xl rounded-lg hover:bg-indigo-700 ml-6">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js file/utilitieFile.js"></script>
+    <script src="js file/deposit.js"></script>
+    <script src="js file/withdraw.js"></script>
+</body>
+
+</html>
